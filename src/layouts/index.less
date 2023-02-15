@@ -1,0 +1,127 @@
+.layout {
+    height: 100%;
+    font-size: 14px;
+    color: #2F4050;
+
+    :global {
+        :where(.css-dev-only-do-not-override-ixblex).ant-layout {
+            background-color: #F5F5F5;
+        }
+    }
+
+    .sider {
+        background-color: #2F4050;
+        max-width: 164px;
+        min-width: 0;
+        border: none;
+
+        :global {
+            .ant-layout-sider-children {
+                display: flex;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .head {
+            display: flex;
+            align-items: center;
+            height: 103px;
+            margin-left: 12px;
+            overflow: hidden;
+            cursor: pointer;
+
+            .log {
+                background-color: #fff;
+                flex-shrink: 0;
+                border-radius: 18px;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .projectName {
+                margin-left: 8px;
+                color: #fff;
+            }
+        }
+
+        .smallhead {
+            margin: 0 auto;
+
+            img {
+                height: auto;
+            }
+
+            .projectName {
+                display: none;
+            }
+        }
+
+        .menu {
+            flex-grow: 1;
+        }
+
+        .collapsedWrap {
+            height: 32px;
+            line-height: 32px;
+            border-top: 1px solid #F5F5F5;
+            padding: 0 16px;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+
+    .header {
+        height: 48px;
+        line-height: 48px;
+        background-color: transparent;
+        padding: 0 24px;
+        margin-top: 8px;
+        // margin-bottom: 8px;
+        display: flex;
+
+        .left {
+            flex-grow: 1;
+            position: relative
+        }
+
+        .right {
+            font-size: 16px;
+            .logout {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+
+                .user {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .userPng {
+                width: 30px;
+                height: 30px;
+            }
+
+            .organization {
+                margin-right: 28px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .content {
+        margin: 0 24px;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .footer {
+        padding: 16px 24px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}

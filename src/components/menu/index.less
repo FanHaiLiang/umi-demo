@@ -1,0 +1,63 @@
+.menuWrap {
+    :global {
+
+        // .ant-menu-item {
+        //     margin: 4px 0px;
+        // }
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu-light {
+            background-color: transparent;
+            color: #fff;
+        }
+
+
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu-light.ant-menu-root.ant-menu-inline,
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu-light.ant-menu-root.ant-menu-vertical {
+            border-inline-end: none;
+        }
+
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):active {
+            background-color: transparent;
+        }
+
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-submenu-title:active {
+            background-color: transparent;
+        }
+
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu-light .ant-menu-item:not(.ant-menu-item-disabled):focus-visible,
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu-light .ant-menu-submenu-title:not(.ant-menu-item-disabled):focus-visible {
+            outline: 0;
+            outline-offset: 0;
+            transition: none;
+        }
+
+        .ant-menu-item-selected {
+            background-color: #F5F5F5;
+            border-radius: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu-light .ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected),
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu-light .ant-menu-submenu-title:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) {
+            color: #FF8801;
+        }
+
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu .ant-menu-item,
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu .ant-menu-submenu,
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu .ant-menu-submenu-title {
+            border-radius: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu-light .ant-menu-item-selected {
+            color: #FF8801;
+            margin: 4px 0px;
+            width: 100%;
+
+            // & > span:first-child {
+            //     margin-left: 4px;
+            // }
+        }
+
+        :where(.css-dev-only-do-not-override-ixblex).ant-menu-light .ant-menu-submenu-selected>.ant-menu-submenu-title {
+            color: #fff;
+        }
+    }
+}
